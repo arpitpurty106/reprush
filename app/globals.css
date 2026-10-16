@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a4147 #14171a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #14171a;
+  color: #edfff1;
+}
+
+.bg-noise {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(237, 239, 241, 0.05) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #c6ff3d;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.hairline {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(237, 239, 241, 0.18),
+    transparent
+  );
+  height: 1px;
+}
+
+.tick {
+  width: 3px;
+  border-radius: 2px;
+  background: #c6ff3d;
+}
