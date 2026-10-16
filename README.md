@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RepRush — Your AI Training Partner
 
 RepRush is a free, no-login AI gym trainer: it builds your workout split,
@@ -73,3 +74,6 @@ lib/
 - **Add exercises**: append to `lib/exercises.ts`.
 - **Coach knowledge**: add rules to the `RULES` array in
   `lib/trainerEngine.ts`.
+=======
+# reprush
+>>>>>>> 366dfaa3fd09c88b58cd46dd6ab2c13e73c6b3df
